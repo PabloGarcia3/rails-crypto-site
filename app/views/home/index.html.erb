@@ -1,16 +1,218 @@
-<h1>Hello World!</h1>
-<p>This is my first Rails App!</p>
+<div class="jumbotron" id="jumbotron-main">
+  <h1>Crypto-Central Tracker</h1>
+  <p>Keep up to date on coin prices and the bottom line of your current cryptocurrency investment portfolio</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+
+<h1>Current Prices</h1>
 <br/><br/>
 <% @coins %>
-
+<!--bitcoin card-->
 <% for x in @coins %>
-    <% for coin in @my_coins %>
+    <% for coin in @bitcoin %>
         <% if coin == x["symbol"] %>
-            <%= x["name"] %>: $<%= x["price_usd"] %><br/>
-            Rank: <%= x["rank"] %><br/><br/>
+            <!--<div class="row">-->
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                </br>
+                  <%= image_tag("color/btc.png") %>
+                  <div class="caption">
+                    <h2><%= x["name"] %></h2>
+                    <h4>$<%= x["price_usd"] %></h4>
+                    <p>Rank: <%= x["rank"] %></p>
+                  </div>
+                </div>
+              </div>
+            <!--</div>-->
         <% end %>
     <% end %>
 <% end %>
-
-<br/>
-
+<!--ethereum card-->
+<% @coins %>
+<% for x in @coins %>
+    <% for coin in @ethereum %>
+        <% if coin == x["symbol"] %>
+            <!--<div class="row">-->
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                </br>
+                  <%= image_tag("color/eth.png") %>
+                  <div class="caption">
+                    <h2><%= x["name"] %></h2>
+                    <h4>$<%= x["price_usd"] %></h4>
+                    <p>Rank: <%= x["rank"] %></p>
+                  </div>
+                </div>
+              </div>
+            <!--</div>-->
+        <% end %>
+    <% end %>
+<% end %>
+<!--ripple card-->
+<% @coins %>
+<% for x in @coins %>
+    <% for coin in @ripple %>
+        <% if coin == x["symbol"] %>
+            <!--<div class="row">-->
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                </br>
+                  <%= image_tag("color/xrp.png") %>
+                  <div class="caption">
+                    <h2><%= x["name"] %></h2>
+                    <h4>$<%= x["price_usd"] %></h4>
+                    <p>Rank: <%= x["rank"] %></p>
+                  </div>
+                </div>
+              </div>
+            <!--</div>-->
+        <% end %>
+    <% end %>
+<% end %>
+<!--bitcoin cash card-->
+<% @coins %>
+<% for x in @coins %>
+    <% for coin in @bitcoin_cash %>
+        <% if coin == x["symbol"] %>
+            <!--<div class="row">-->
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                </br>
+                  <%= image_tag("color/bch.png") %>
+                  <div class="caption">
+                    <h2><%= x["name"] %></h2>
+                    <h4>$<%= x["price_usd"] %></h4>
+                    <p>Rank: <%= x["rank"] %></p>
+                  </div>
+                </div>
+              </div>
+            <!--</div>-->
+        <% end %>
+    <% end %>
+<% end %>
+<!--EOS card-->
+<% @coins %>
+<% for x in @coins %>
+    <% for coin in @eos %>
+        <% if coin == x["symbol"] %>
+            <!--<div class="row">-->
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                </br>
+                  <%= image_tag("color/eos.png") %>
+                  <div class="caption">
+                    <h2><%= x["name"] %></h2>
+                    <h4>$<%= x["price_usd"] %></h4>
+                    <p>Rank: <%= x["rank"] %></p>
+                  </div>
+                </div>
+              </div>
+            <!--</div>-->
+        <% end %>
+    <% end %>
+<% end %>
+<!--stellar card-->
+<% @coins %>
+<% for x in @coins %>
+    <% for coin in @stellar %>
+        <% if coin == x["symbol"] %>
+            <!--<div class="row">-->
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                </br>
+                  <%= image_tag("color/xlm.png") %>
+                  <div class="caption">
+                    <h2><%= x["name"] %></h2>
+                    <h4>$<%= x["price_usd"] %></h4>
+                    <p>Rank: <%= x["rank"] %></p>
+                  </div>
+                </div>
+              </div>
+            <!--</div>-->
+        <% end %>
+    <% end %>
+<% end %>
+<!--litecoin card-->
+<% @coins %>
+<% for x in @coins %>
+    <% for coin in @litecoin %>
+        <% if coin == x["symbol"] %>
+            <!--<div class="row">-->
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                </br>
+                  <%= image_tag("color/ltc.png") %>
+                  <div class="caption">
+                    <h2><%= x["name"] %></h2>
+                    <h4>$<%= x["price_usd"] %></h4>
+                    <p>Rank: <%= x["rank"] %></p>
+                  </div>
+                </div>
+              </div>
+            <!--</div>-->
+        <% end %>
+    <% end %>
+<% end %>
+<!--cardano card-->
+<% @coins %>
+<% for x in @coins %>
+    <% for coin in @cardano %>
+        <% if coin == x["symbol"] %>
+            <!--<div class="row">-->
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                </br>
+                  <%= image_tag("color/ada.png") %>
+                  <div class="caption">
+                    <h2><%= x["name"] %></h2>
+                    <h4>$<%= x["price_usd"] %></h4>
+                    <p>Rank: <%= x["rank"] %></p>
+                  </div>
+                </div>
+              </div>
+            <!--</div>-->
+        <% end %>
+    <% end %>
+<% end %>
+<!--monero card-->
+<% @coins %>
+<% for x in @coins %>
+    <% for coin in @monero %>
+        <% if coin == x["symbol"] %>
+            <!--<div class="row">-->
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                </br>
+                  <%= image_tag("color/xmr.png") %>
+                  <div class="caption">
+                    <h2><%= x["name"] %></h2>
+                    <h4>$<%= x["price_usd"] %></h4>
+                    <p>Rank: <%= x["rank"] %></p>
+                  </div>
+                </div>
+              </div>
+            <!--</div>-->
+        <% end %>
+    <% end %>
+<% end %>
+<!--IOTA card-->
+<% @coins %>
+<% for x in @coins %>
+    <% for coin in @iota %>
+        <% if coin == x["symbol"] %>
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                </br>
+                  <%= image_tag("color/miota.png") %>
+                  <div class="caption">
+                    <h2><%= x["name"] %></h2>
+                    <h4>$<%= x["price_usd"] %></h4>
+                    <p>Rank: <%= x["rank"] %></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <% end %>
+    <% end %>
+<% end %>

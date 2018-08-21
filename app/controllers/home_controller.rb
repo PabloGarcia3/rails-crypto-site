@@ -6,7 +6,17 @@ class HomeController < ApplicationController
     @uri = URI(@url)
     @response = Net::HTTP.get(@uri)
     @coins = JSON.parse(@response)
-    @my_coins = ["BTC", "ETH", "XRP", "ADA", "XLM", "STEEM",]
+    # @my_coins = ["BTC", "ETH", "XRP"]
+    @bitcoin = ["BTC"]
+    @ethereum = ["ETH"]
+    @ripple = ["XRP"]
+    @bitcoin_cash = ["BCH"]
+    @eos = ["EOS"]
+    @stellar = ["XLM"]
+    @litecoin = ["LTC"]
+    @cardano = ["ADA"]
+    @monero = ["XMR"]
+    @iota = ["MIOTA"]
     
   end
   
@@ -16,7 +26,6 @@ class HomeController < ApplicationController
   def lookup
     require 'net/http'
     require 'json'
-    
     @url = 'https://api.coinmarketcap.com/v1/ticker/'
     @uri = URI(@url)
     @response = Net::HTTP.get(@uri)
