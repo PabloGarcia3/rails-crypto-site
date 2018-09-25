@@ -17,6 +17,7 @@ class HomeController < ApplicationController
     @cardano = ["ADA"]
     @monero = ["XMR"]
     @iota = ["MIOTA"]
+    @steem = ["STEEM"]
     
   end
   

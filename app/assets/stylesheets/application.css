@@ -15,28 +15,44 @@
  */
 
 .myNavbar   {
-    background-color: #1a1a1a;
-    color: #000000;
+    background-color: #004a99;
+    color: #ffffff;
     border: 1px solid #333;
+    border-bottom-color: #002699;
  }
  
  .myNavbar li a { 
-     color: #FFF;  
+     color: #ffffff;  
  } 
  .myNavbar li a:hover, focus, active { 
      color: #FFF; 
-     background-color: #0086b3; 
+     background-color: #66ccff; 
  }
  
  .myNavbar navbar-brand a{
-     color: #FFF;
+     color: #99ff99;
  }
- .myNavbar navbar-brand:hover{
+ .myNavbar navbar-header:hover{
      color: #FFF;
-     background-color: #0086b3;
+     background-color: #66ccff;
  }
  
  body{
+     text-align: center;
+     color: #002699;
+     background: #ffffff;
+ }
+ 
+ a{
+     color: #002699;
+ }
+ 
+ .ad-box{
+     height: 100px;
+     width: 600px;
+     background: #b3b3b3;
+     padding-top: 20px;
+     display: inline-block;
      text-align: center;
  }
 
